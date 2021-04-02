@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_02_123915) do
+ActiveRecord::Schema.define(version: 2021_04_02_140003) do
 
   create_table "cars", force: :cascade do |t|
     t.string "brand"
-    t.string "type"
+    t.string "car_type"
     t.integer "year"
     t.float "price"
     t.text "description"
