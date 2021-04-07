@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <div class="col-lg-6 offset-lg-3">
+        <h1>Who will be joining us?</h1>
+        <%= simple_form_for @car do |f| %>
+        <%=  f.input :brand %>
+        <%=  f.input :car_type %>
+        <!-- <label for="form-address">Search for address</label>
+        <input name=<%= params[:location] %> class="form-control" id= "form-address" type="search"> -->
+        <%# <%=  f.input :location, input_html: { type: "search", id: "form-address" } %> 
+        <%=  f.input :year %>
+        <%=  f.input :price %>
+        <%=  f.input :description %>
+        <%# <%= f.input :photo, as: :file %> %>
+        <%= f.submit "Submit", class: "btn btn-primary" %>
+        <%  end %>
+    </div>
+</div>
