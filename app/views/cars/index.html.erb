@@ -1,3 +1,11 @@
-<% @cars.each do |car| %>
-<%= car.brand %>
-<% end %>
+<div class="cards-container">
+    <div class="col-sm-12">
+        <% @cars.each do |car| %>
+        <div class="card">
+            
+            <%= car.brand %>
+            <%= car.car_type %>
+            <% end %>
+        </div>
+    </div>
+</div>
