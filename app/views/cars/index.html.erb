@@ -1,17 +1,21 @@
 <div class="cards-container">
-    <div class="col-sm-12">
+    
+    <div class="car-cards">
         <% @cars.each do |car| %>
-        <%# <div class="pet-card-img cd-img w-50 mr-2 rounded" style="background-image: url('<%= cl_image_path (pet.photo.key), crop: :fill %>
         
-        <div class="card">
-            <%= link_to car_path(car) do %>
-                <div class="car-card-img" style="background-image: url('<%= cl_image_path(car.photo.key, height: 300, width: 400, crop: :fill )%>')">
-                    <%= car.brand %>
-                    <%= car.car_type %>
-                    <%= car.year %>
-                    <% end %>
+            <div class="">
+                <div class="car-card">
+                    <div class="card-text"><%= link_to car_path(car) do %>
+                        <div class="car-card-img" style="background-image: url('<%= cl_image_path(car.photo.key, height: 300, width: 400, crop: :fill )%>')">
+                            <%= car.brand %>
+                            <%= car.car_type %>
+                            <%= car.year %>
+                        </div>
+                        <% end %>
+                    </div>
                 </div>
-            <% end %>
-        </div>
+            </div>
+        <% end %>
     </div>
+    
 </div>
