@@ -1,3 +1,49 @@
-.card {
-    background-color: lightpink;
+.car-cards {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 12px;
+}
+
+.car-cards a {
+    color: brown;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.car-cards a:hover {
+    color:red;
+    text-decoration: none;
+}
+
+.car-card-img {
+    height: 300px;
+    width: 400px;
+}
+
+.car-card {
+    margin: 8px;
+}
+@media(min-width: 1422px) {
+    .car-cards {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media(max-width: 1422px) {
+    .car-cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 992px) {
+    .car-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+  
+@media(max-width: 768px) {
+    .car-cards {
+      grid-template-columns: 1fr;
+    }
 }
