@@ -1,1 +1,27 @@
-show
+
+<div class="car-card-show">
+    
+    <div class="car-image" style="background-image: url('<%= cl_image_path(@car.photo.key, crop: :fill) %>')">
+    </div>
+    <div class="car-card-type-year d-flex justify-content-between">
+        <div class="car-brand-type">
+            <%= @car.brand %>
+            <%= @car.car_type %>
+            <%= @car.year %>
+        </div>
+        <div class="car-price d-flex">
+            <p><h4><i class="fas fa-euro-sign"></i> </h4></p>
+            <div class="car-price">
+                <h4><%= @car.price %></h4>
+            </div>
+        </div>
+    </div>
+    <div class="car-desrciption">
+        <%= @car.description %>
+    </div>
+    <%= link_to "INDEX", cars_path, class: "btn btn-outline-secondary btn-sm" %>
+    <% if user_signed_in? %>
+        <%= link_to "EDIT", edit_car_path, class: "btn btn-outline-secondary btn-sm" %>
+    <% end %>
+</div>
+
