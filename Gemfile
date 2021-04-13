@@ -39,7 +39,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'dotenv-rails'
-  gem 'sqlite3' #gem to use in development-test environment
+  gem 'sqlite3', '~> 1.4' #gem to use in development-test environment
 end
 
 group :development do
