@@ -254,10 +254,7 @@ DEPENDENCIES
   cloudinary (~> 1.16.0)
   devise
   dotenv-rails
-<<<<<<< HEAD
-=======
   font-awesome-sass
->>>>>>> cb1b061a14d38093b0262019f9b4f79bc0cae3d9
   jbuilder (~> 2.7)
   jquery-turbolinks (~> 2.1)
   listen (~> 3.2)
