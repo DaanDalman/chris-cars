@@ -1,9 +1,10 @@
 .car-image {
-    height: 400px;
+    height: 60vh;
     // width: 90%;
     margin: auto;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 4px;
 }
 
 .car-card-show {
@@ -14,4 +15,15 @@
 
 .car-brand-type {
     font-size: 2em;
+}
+
+@media(max-width: 768px) {
+    .car-image {
+        height: 80vh;
+        // width: 90%;
+        margin: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+    }
 }
