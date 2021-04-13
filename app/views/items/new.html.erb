@@ -1,0 +1,12 @@
+<div class="container mt-5">
+    <div class="col-lg-6 offset-lg-3">
+        <h1>Wat voor item voeg je toe?</h1>
+        <%= simple_form_for @item do |f| %>
+        <%=  f.input :name %>        
+        <%=  f.input :price %>
+        <%=  f.input :description %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit "Submit", class: "btn btn-primary" %>
+        <%  end %>
+    </div>
+</div>

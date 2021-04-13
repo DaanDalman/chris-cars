@@ -1,0 +1,26 @@
+<div class="item-card-show">
+    
+    <div class="item-image" style="background-image: url('<%= cl_image_path(@item.photo.key, crop: :fill) %>')">
+    </div>
+    <div class="item-card-type-year d-flex justify-content-between">
+        <div class="item-brand-type">
+            <%= @item.name %>
+            <%= @item.description %>
+            
+        </div>
+        <div class="item-price d-flex">
+            <p><h4><i class="fas fa-euro-sign"></i> </h4></p>
+            <div class="item-price">
+                <h4><%= @item.price %></h4>
+            </div>
+        </div>
+    </div>
+    <div class="item-desrciption">
+        <%= @item.description %>
+    </div>
+    <%= link_to "INDEX", items_path, class: "btn btn-outline-secondary btn-sm" %>
+    <% if user_signed_in? %>
+        <%= link_to "EDIT", edit_item_path, class: "btn btn-outline-secondary btn-sm" %>
+        <%= link_to "DESTROY", item_path(@item), class: "btn btn-outline-secondary btn-sm", method: :delete, data: { confirm: "Delete?" }%>
+    <% end %>
+</div>

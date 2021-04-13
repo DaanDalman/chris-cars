@@ -1,4 +1,4 @@
-.car-image {
+.item-image {
     height: 60vh;
     // width: 90%;
     margin: auto;
@@ -7,18 +7,18 @@
     border-radius: 4px;
 }
 
-.car-card-show {
+.item-card-show {
     width: 90%;
     margin: auto;
     margin-top: 20px;
 }
 
-.car-brand-type {
+.item-brand-type {
     font-size: 2em;
 }
 
 @media(max-width: 768px) {
-    .car-image {
+    .item-image {
         height: 80vh;
         // width: 90%;
         margin: auto;
