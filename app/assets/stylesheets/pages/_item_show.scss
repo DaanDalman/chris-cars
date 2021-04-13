@@ -1,0 +1,29 @@
+.item-image {
+    height: 60vh;
+    // width: 90%;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.item-card-show {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.item-brand-type {
+    font-size: 2em;
+}
+
+@media(max-width: 768px) {
+    .item-image {
+        height: 80vh;
+        // width: 90%;
+        margin: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+    }
+}
