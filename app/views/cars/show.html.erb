@@ -16,13 +16,17 @@
             </div>
         </div>
     </div>
-    <div class="car-desrciption">
+    <div class="car-description">
         <%= @car.description %>
     </div>
-    <%= link_to "INDEX", cars_path, class: "btn btn-outline-secondary btn-sm" %>
-    <% if user_signed_in? %>
-        <%= link_to "EDIT", edit_car_path, class: "btn btn-outline-secondary btn-sm" %>
-        <%= link_to "DESTROY", car_path(@car), class: "btn btn-outline-secondary btn-sm", method: :delete, data: { confirm: "Delete?" }%>
-    <% end %>
+    <div class="car-links-position" style="justify-content-center">
+        <div class="car-links">
+            <%= link_to "INDEX", cars_path, class: "btn btn-outline-secondary btn-sm" %>
+            <% if user_signed_in? %>
+                <%= link_to "EDIT", edit_car_path, class: "btn btn-outline-secondary btn-sm" %>
+                <%= link_to "DESTROY", car_path(@car), class: "btn btn-outline-secondary btn-sm", method: :delete, data: { confirm: "Delete?" }%>
+            <% end %>
+        </div>
+    </div>
 </div>
 

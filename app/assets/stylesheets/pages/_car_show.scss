@@ -15,7 +15,26 @@
 
 .car-brand-type {
     font-size: 2em;
+    font-weight: bold;
 }
+
+.car-description {
+    width: 90%;
+    height: 100px;
+    margin: 10px 5% 30px 5%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.car-links {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.car-links a {
+    margin:0 15px 0 15px;
+}
+
 
 @media(max-width: 768px) {
     .car-image {
