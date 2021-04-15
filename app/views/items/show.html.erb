@@ -15,12 +15,16 @@
             </div>
         </div>
     </div>
-    <div class="item-desrciption">
+    <div class="item-description">
         <%= @item.description %>
     </div>
-    <%= link_to "INDEX", items_path, class: "btn btn-outline-secondary btn-sm" %>
-    <% if user_signed_in? %>
-        <%= link_to "EDIT", edit_item_path, class: "btn btn-outline-secondary btn-sm" %>
-        <%= link_to "DESTROY", item_path(@item), class: "btn btn-outline-secondary btn-sm", method: :delete, data: { confirm: "Delete?" }%>
-    <% end %>
+    <div class="item-links-position">
+        <div class="item-links">
+            <%= link_to "INDEX", items_path, class: "btn btn-outline-secondary btn-sm" %>
+            <% if user_signed_in? %>
+                <%= link_to "EDIT", edit_item_path, class: "btn btn-outline-secondary btn-sm" %>
+                <%= link_to "DESTROY", item_path(@item), class: "btn btn-outline-secondary btn-sm", method: :delete, data: { confirm: "Delete?" }%>
+            <% end %>
+        </div>
+    </div>
 </div>
