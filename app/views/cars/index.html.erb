@@ -1,20 +1,30 @@
+  <div class="car-surch-form">
+        <form action="/cars" id="form">
+                <input name="car-brand" class="form-control-for-hp w-100 fs-1" type="search" placeholder="  Wat voor merk auto zoek je?">
+            <%# <button class="icon-search" type="submit"> %>
+                <%# <a class="hp-search-button btn btn-info"><i class="fas fa-search"></i></a>
+            </button> %>
+        </form>
+    </div>
 <div class="cards-container">
-    
-    <div class="car-cards">
-        <% @cars.each do |car| %>
-        
-            <div class="">
-                <div class="car-card">
-                    <div class="card-text"><%= link_to car_path(car) do %>
-                        <div class="car-card-img" style="background-image: url('<%= cl_image_path(car.photo.key, height: 300, width: 400, crop: :fill )%>')">
-                            <%= car.brand %>
-                            <%= car.car_type %>
-                            <%# <%= car.year %>
+
+    <div class="">
+        <div class="car-cards">
+            <% @cars.each do |car| %>
+            
+                <div class="">
+                    <div class="car-card">
+                        <div class="card-text"><%= link_to car_path(car) do %>
+                            <div class="car-card-img" style="background-image: url('<%= cl_image_path(car.photo.key, height: 300, width: 400, crop: :fill )%>')">
+                                <%= car.brand %>
+                                <%= car.car_type %>
+                                <%# <%= car.year %>
+                            </div>
+                            <% end %>
                         </div>
-                        <% end %>
                     </div>
                 </div>
-            </div>
-        <% end %>
+            <% end %>
+        </div>
     </div>
 </div>
