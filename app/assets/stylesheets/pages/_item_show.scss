@@ -11,9 +11,11 @@
     width: 90%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .item-brand-type {
+    padding-left: 5%;
     font-size: 2em;
     font-weight: bold;
 }
@@ -22,7 +24,8 @@
     width: 90%;
     height: 100px;
     margin: 10px 5% 30px 5%;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 1px 2px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .item-links {
@@ -33,6 +36,10 @@
 
 .item-links a {
     margin:0 15px 0 15px;
+}
+
+.item-price {
+    padding-right: 5%;
 }
 
 
