@@ -7,9 +7,7 @@
                 <div class="item-card">
                     <div class="item-card-text"><%= link_to item_path(item) do %>
                         <div class="item-card-img" style="background-image: url('<%= cl_image_path(item.photo.key, height: 300, width: 400, crop: :fill )%>')">
-                            <%= item.name %>
-                            <%= item.description %>
-                            
+                            <%= item.name %>   
                         </div>
                         <% end %>
                     </div>
