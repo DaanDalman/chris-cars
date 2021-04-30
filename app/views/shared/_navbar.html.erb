@@ -15,11 +15,11 @@
 
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         <% if current_user %>
-          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          <%= link_to "New car", new_car_path, class: "dropdown-item" %>
-          <%= link_to "New item", new_item_path, class: "dropdown-item" %>
+          <%= link_to "Afmelden", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+          <%= link_to "Auto toevoegen", new_car_path, class: "dropdown-item" %>
+          <%= link_to "Item toevoegen", new_item_path, class: "dropdown-item" %>
         <% else %>
-          <%= link_to "Log in", new_user_session_path, class: "dropdown-item" %>
+          <%= link_to "Aanmelden", new_user_session_path, class: "dropdown-item" %>
           <%# <%= link_to "Sign up", new_user_registration_path, class: "dropdown-item" %> 
         <% end %>
       </div>
